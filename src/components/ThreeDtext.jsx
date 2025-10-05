@@ -51,17 +51,17 @@ function ThreeDtext() {
 
     const textureLoader = new THREE.TextureLoader();
     const matcatTexture = textureLoader.load(
-      'static/textures/matcaps/4.png'
+      '/static/textures/matcaps/4.png'
     );
     const donutmatcapTexture = textureLoader.load(
-      'static/textures/matcaps/7.png'
+      '/static/textures/matcaps/7.png'
     )
     donutmatcapTexture.colorSpace = THREE.SRGBColorSpace;
     matcatTexture.colorSpace = THREE.SRGBColorSpace;
     // 3D text
     const fontLoader = new FontLoader();
     fontLoader.load(
-      'fonts/helvetiker_regular.typeface.json',
+      '/static/fonts/helvetiker_regular.typeface.json',
       (font_helvetica) => {
         const textGeometry = new TextGeometry(
           'SYBAU',
